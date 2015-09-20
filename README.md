@@ -1,2 +1,2 @@
 # Strateratech_aegir
-# Makefiles and that make up www.strateratech.com 
+# Makefiles and custom modules and themes that make up www.strateratech.com 
