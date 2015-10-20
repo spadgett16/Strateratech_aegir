@@ -6,47 +6,67 @@ projects[drupal][version] = "7.38"
 
 ; Modules
 projects[admin_menu][version] = "3.0-rc5"
+projects[admin_menu][subdir] = "contrib"
 
 projects[backup_migrate][version] = "3.1"
+projects[backup_migrate][subdir] = "contrib"
 
 projects[ctools][version] = "1.3"
+projects[ctools][subdir] = "contrib"
 
 projects[ckeditor][version] = "1.16"
+projects[ckeditor][subdir] = "contrib"
 
 projects[features][version] = "1.0"
+projects[features][subdir] = "contrib"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-;projects[icompany_config][download][type] = ""
-;projects[icompany_config][download][url] = ""
-;projects[icompany_config][type] = "module"
+projects[icompany_config][download][type] = "git"
+projects[icompany_config][download][url] = "https://github.com/spadgett16/stratera_icompany.git"
+projects[icompany_config][directory_name] = "contrib"
+projects[icompany_config][type] = "module"
 ;projects[icompany_config][version] = "1.0"
 
+
 projects[imce][version] = "1.9"
+projects[imce][subdir] = "contrib"
 
 projects[jcarousel][version] = "2.6"
+projects[jcarousel][subdir] = "contrib"
 
 projects[jquery_update][version] = "2.3"
+projects[jquery_update][subdir] = "contrib"
 
 projects[link][version] = "1.3"
+projects[link][subdir] = "contrib"
 
 projects[menu_block][version] = "2.6"
+projects[menu_block][subdir] = "contrib"
 
 projects[module_filter][version] = "2.0"
+projects[module_filter][subdir] = "contrib"
 
 projects[multiblock][version] = "1.2"
+projects[multiblock][subdir] = "contrib"
 
 projects[nodequeue][version] = "2.0-beta1"
+projects[nodequeue][subdir] = "contrib"
 
 projects[superfish][version] = "1.9"
+projects[superfish][subdir] = "contrib"
 
 projects[token][version] = "1.5"
+projects[token][subdir] = "contrib"
 
 projects[views][version] = "3.7"
+projects[views][subdir] = "contrib"
 
 projects[webform][version] = "4.9"
+projects[webform][subdir] = "contrib"
 
 projects[xmlsitemap][version] = "2.2"
+projects[xmlsitemap][subdir] = "contrib"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
@@ -62,6 +82,7 @@ projects[helloworld][type] = "module"
 ;projects[icompany_module][download][type] = ""
 ;projects[icompany_module][download][url] = ""
 ;projects[icompany_module][type] = "module"
+;projects[features][subdir] = "contrib"
 
 ; Themes
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
@@ -69,10 +90,17 @@ projects[helloworld][type] = "module"
 ;projects[icompany][download][type] = ""
 ;projects[icompany][download][url] = ""
 ;projects[icompany][type] = "theme"
+projects[icompany][download][type] = "git"
+projects[icompany][download][url] = "https://github.com/spadgett16/stratera_icompany_theme.git"
+projects[icompany][directory_name] = "contrib"
+projects[icompany][type] = "theme"
 
 ; Libraries
 libraries[superfish][directory_name] = superfish
 libraries[superfish][download][type] = get
 libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/archive/1.x.zip
 
-
+libraries[ckeditor][download][type] = get
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_standard.zip"
+libraries[ckeditor][destination] = libraries
+libraries[ckeditor][directory_name] = ckeditor
