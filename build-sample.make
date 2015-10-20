@@ -92,7 +92,7 @@ projects[helloworld][type] = "module"
 ;projects[icompany][type] = "theme"
 projects[icompany][download][type] = "git"
 projects[icompany][download][url] = "https://github.com/spadgett16/stratera_icompany_theme.git"
-projects[icompany][directory_name] = "contrib"
+projects[icompany][directory_name] = "custom"
 projects[icompany][type] = "theme"
 
 ; Libraries
