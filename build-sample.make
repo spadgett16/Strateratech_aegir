@@ -53,6 +53,9 @@ projects[multiblock][subdir] = "contrib"
 projects[nodequeue][version] = "2.0-beta1"
 projects[nodequeue][subdir] = "contrib"
 
+projects[profiler_builder][version] = "1.2"
+projects[profiler_builder][subdir] = "contrib"
+
 projects[superfish][version] = "1.9"
 projects[superfish][subdir] = "contrib"
 
@@ -96,11 +99,22 @@ projects[icompany][directory_name] = "custom"
 projects[icompany][type] = "theme"
 
 ; Libraries
-libraries[superfish][directory_name] = superfish
-libraries[superfish][download][type] = get
-libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/archive/1.x.zip
+libraries[superfish][directory_name] = "superfish"
+libraries[superfish][type] = "library"
+libraries[superfish][destination] = "libraries"
+libraries[superfish][download][type] = "get"
+libraries[superfish][download][url] = "https://github.com/mehrpadin/Superfish-for-Drupal/archive/master.zip"
 
-libraries[ckeditor][download][type] = get
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_standard.zip"
-libraries[ckeditor][destination] = libraries
-libraries[ckeditor][directory_name] = ckeditor
+libraries[ckeditor][directory_name] = "ckeditor"
+libraries[ckeditor][type] = "library"
+libraries[ckeditor][destination] = "libraries"
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.tar.gz"
+
+libraries[profiler][type] = "library"
+libraries[profiler][download][type] = "get"
+libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta2.tar.gz"
+libraries[profiler][patch][] = "https://www.drupal.org/files/issues/profiler-add-ability-to-add-roles-2145695-4.patch"
+libraries[profiler][patch][] = "https://www.drupal.org/files/issues/profiler-support_non_custom_blocks-2418273-5.patch"
+libraries[profiler][patch][] = "https://www.drupal.org/files/issues/profiler-site_pre_and_post_install_hooks-2418335-6.patch"
+libraries[profiler][patch][] = "https://www.drupal.org/files/issues/profiler-support_custom_task_and_form_hooks-2244059-2.patch"
